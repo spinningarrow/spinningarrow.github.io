@@ -1,2 +1,3 @@
-# spinningarrow.github.io
-GitHub Pages for me.
+# code.sahil.me
+
+Portfolio of my code projects.
