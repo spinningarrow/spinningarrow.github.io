@@ -2,23 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Code by @spinningarrow</title>
+	<title>code by @spinningarrow</title>
 
 <style>
 body {
-	color: #333;
+	color: rgb(48, 52, 63);
 	font-family: monospace;
+	font-size: 1.5rem;
 	margin: 0 auto;
-	max-width: 720px;
 	padding: 1rem;
 }
 
 a:link, a:visited {
-	color: hsl(249, 100%, 50%);
-}
-
-h1, h2 {
-	text-transform: lowercase;
+	color: hsl(203, 55%, 56%);
+	text-decoration: none;
+	transition: background ease-in 0.05s;
 }
 
 h1 {
@@ -27,16 +25,31 @@ h1 {
 }
 
 h1::before {
-	content: '{';
+	content: '/';
+	opacity: 0.5;
 }
 
 h1::after {
-	content: '}';
+	content: '/';
+	opacity: 0.5;
 }
 
-h2::before {
-	color: #ccc;
-	font-style: italic;
+h1 a:first-child {
+	color: hsl(109, 44%, 48%);
+}
+
+h1 a:first-child:hover {
+	background: hsl(109, 44%, 48%);
+	color: white;
+}
+
+h1 a:last-child {
+	color: hsl(323, 46%, 56%);
+}
+
+h1 a:last-child:hover {
+	background: hsl(323, 46%, 56%);
+	color: white;
 }
 
 ul {
@@ -49,17 +62,22 @@ ul {
 }
 
 ul li {
-	border: 1px dashed tomato;
 	flex: 0 0 12rem;
-	margin: 0.5rem;
+	margin-right: -0.5rem;
+	margin-bottom: -0.5rem;
 	padding: 1rem;
+	transition: background ease-in 0.05s;
+}
+
+ul li:hover {
+	background: rgb(48, 52, 63);
+	color: rgb(237, 165, 44);
 }
 </style>
 </head>
 <body>
-	<h1>Code</h1>
+	<h1><a href="#">code</a>.<a href="https://sahil.me">sahil.me</a></h1>
 
-	<h2>Libraries and Tools</h2>
 	<ul>
 		<li>
 			<h3><a href="https://github.com/spinningarrow/zoom-vanilla.js">zoom-vanilla.js</a></h3>
@@ -73,18 +91,10 @@ ul li {
 			<h3><a href="https://github.com/spinningarrow/commajump">commajump</a></h3>
 			<p>Fast autojump alternative for the Fish shell.</p>
 		</li>
-	</ul>
-
-	<h2>Experiments</h2>
-	<ul>
 		<li>
 			<h3><a href="https://github.com/spinningarrow/vinylwhere">vinylwhere</a></h3>
 			<p>Speedy vinyl records search engine.</p>
 		</li>
-	</ul>
-
-	<h2>Personal setup</h2>
-	<ul>
 		<li>
 			<h3><a href="https://github.com/spinningarrow/.files">.files</a></h3>
 			<p>Configuration for my computers.</p>
@@ -94,6 +104,5 @@ ul li {
 			<p>Bring a new system up and running.</p>
 		</li>
 	</ul>
-
 </body>
 </html>
